@@ -60,9 +60,9 @@ errors: ...
 
 #### sequelize.validateIsUnique(`table field`, `optional error message`)
 
-When using `sequelize.validateIsUnique()` the first parameter must the the field to do the check on. Notice that `isUnique: sequelize.validateIsUnique('email')` is going to check for the `email` field on the table with the value of `User.email`. Based on the previous example, the query it performed was something like this ( depending on your database):
-```sql
-SELECT count(*) AS `count` FROM `users` AS `User` WHERE `User`.`email` = 'bob2@jones.com');
+When using `sequelize.validateIsUnique()` the first parameter must the the field to do the check on. For example, `isUnique: sequelize.validateIsUnique('email')`. In order for the validation to pass for an existing instance, the primary keys for that instance will be used to exclude values for that instance. Based on the previous example, the query it performed was something like this ( depending on your database):
+```
+SELECT count(*) AS `count` FROM `users` AS `User` WHERE `User`.`email` = 'jdoe@example.com' AND `User `.`id`  IS NOT NULL;
 ```
 
 The second parameter allows you to define a custom error message. The default error message is: `'{{field}} must be unique'`. Using our previous example we could do something like this: 
@@ -84,11 +84,14 @@ var User = sequelize.define('User', {
 ## Branch Strategy
 The master branch will be the stable branch. Please submit your PRs against the development branch. Once tests are created for v1.0.0 I will be moving development to master.
 
-## Issues
-If you discover a bug, please create a ticket on Github. https://github.com/angelxmoreno/sequelize-isunique-validator/issues
+## Testing
+```
+npm test
+```
 
-### Kown Issues
-There aren't any tests! I will be writing tests after further testing, oh and after I finish learning how to test, obviously :stuck_out_tongue_winking_eye:
+## Issues
+If you discover a bug, please create a ticket on Github. 
+[https://github.com/angelxmoreno/sequelize-isunique-validator/issues](https://github.com/angelxmoreno/sequelize-isunique-validator/issues)
 
 ## Contribution
 Pull requests are always welcomed. This is my first module contributed to the NodeJS ecosystem. I'm sure there are a few things that could be improved. Please point them out, provide feedback and suggestions. I am all ears!
