@@ -1,34 +1,34 @@
 {
-    "name": "sequelize-isunique-validator",
-    "version": "1.1.0",
-    "description": "A Sequelize plugin to add isUnique validation to models",
-    "main": "./lib/",
-    "scripts": {
-        "test": "mocha"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/angelxmoreno/sequelize-isunique-validator.git"
-    },
-    "keywords": [
-        "Sequelize",
-        "validation",
-        "models"
-    ],
-    "author": {
-        "name": "Agel S. Moreno",
-        "email": "angelxmoreno@gmail.com",
-        "url": "https://angelxmoreno.github.io/"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/angelxmoreno/sequelize-isunique-validator/issues"
-    },
-    "homepage": "https://github.com/angelxmoreno/sequelize-isunique-validator#readme",
-    "dependencies": {
-        "sqlite3": "^3.1.0"
-    },
-    "peerDependencies": {
-        "sequelize": "2.0.0 - 3.x.x"
-    }
+  "name": "sequelize-isunique-validator",
+  "version": "1.1.1",
+  "description": "A Sequelize plugin to add isUnique validation to models",
+  "main": "./lib/",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelxmoreno/sequelize-isunique-validator.git"
+  },
+  "keywords": [
+    "Sequelize",
+    "validation",
+    "models"
+  ],
+  "author": {
+    "name": "Agel S. Moreno",
+    "email": "angelxmoreno@gmail.com",
+    "url": "https://angelxmoreno.github.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelxmoreno/sequelize-isunique-validator/issues"
+  },
+  "homepage": "https://github.com/angelxmoreno/sequelize-isunique-validator#readme",
+  "dependencies": {
+    "sqlite3": "^3.1.0"
+  },
+  "peerDependencies": {
+    "sequelize": "2.0.0 - 3.x.x"
+  }
 }
