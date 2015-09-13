@@ -84,11 +84,14 @@ var User = sequelize.define('User', {
 ## Branch Strategy
 The master branch will be the stable branch. Please submit your PRs against the development branch. Once tests are created for v1.0.0 I will be moving development to master.
 
-## Issues
-If you discover a bug, please create a ticket on Github. https://github.com/angelxmoreno/sequelize-isunique-validator/issues
+## Testing
+```
+npm test
+```
 
-### Kown Issues
-There aren't any tests! I will be writing tests after further testing, oh and after I finish learning how to test, obviously :stuck_out_tongue_winking_eye:
+## Issues
+If you discover a bug, please create a ticket on Github. 
+[https://github.com/angelxmoreno/sequelize-isunique-validator/issues](https://github.com/angelxmoreno/sequelize-isunique-validator/issues)
 
 ## Contribution
 Pull requests are always welcomed. This is my first module contributed to the NodeJS ecosystem. I'm sure there are a few things that could be improved. Please point them out, provide feedback and suggestions. I am all ears!
